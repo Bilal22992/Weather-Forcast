@@ -12,7 +12,7 @@ app.listen(3000,()=>{
 app.get("/", async(req,res)=>{
     try {
         
-        // const response = await axios.get("https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99",{params:{appid:"5c72e798f3fc801d33823ffd0906d10b"}});
+        // const response = await axios.get("https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99",{params:{appid:""}});
         // console.log(response.data);
 
     } catch (error) {
