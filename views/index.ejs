@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Weather Forcast</title>
 </head>
 <body>
-    
+    <div class="container">
+    <div class ="location">
+        <form class="input" action="/" method="post">
+        <label>Latitude:</label>
+        <input name="latitude" type="text" placeholder="Latitude">
+        <label>Longitude:</label>
+        <input name="longitude" type="text" placeholder="Longitude">
+        <input class="button" type="submit" value="Enter">
+        </form>
+    </div>
+    <div class="forcast">
+        
+        <% if (locals.data){ %>
+        <h1><%= data.weather[0].description %> </h1>
+        <% } %>
+    </div>
+</div>
 </body>
 </html>
